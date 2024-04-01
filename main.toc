@@ -1,0 +1,18 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{\numberline {1}Введение}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Исследуемая область}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Перспективность исследований}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Постановка задачи}{3}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Возможные методы решения}{3}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Используемые технологии}{3}{subsection.1.5}%
+\contentsline {section}{\numberline {2}Используемые математические модели}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Модель волны}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Модель освещения}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Детали реализации}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Скайбокс}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Поле высот}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Освещение}{13}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Подведение итогов}{15}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Полученные результаты}{15}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Вывод}{15}{subsection.4.2}%
+\contentsline {section}{{\cyrillictext \CYRS \cyrp \cyri \cyrs \cyro \cyrk \ \cyrl \cyri \cyrt \cyre \cyrr \cyra \cyrt \cyru \cyrr \cyrery }}{16}{section*.2}%
