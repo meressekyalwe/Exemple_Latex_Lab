@@ -1,54 +1,21 @@
 \documentclass[12pt, a4paper]{article}
-\usepackage[a4paper, mag=1000, left=2.5cm, right=1cm, top=2cm, bottom=2cm, headsep=0.7cm, footskip=1cm]{geometry}
-\usepackage[T1,T2A]{fontenc}
+\usepackage[a4paper, mag=1000, left=2cm, right=1cm, top=2cm, bottom=2cm, headsep=0.7cm, footskip=1cm]{geometry}
+
 \usepackage[utf8]{inputenc}	
-\usepackage[russian]{babel}	
+\usepackage[russian]{babel}
+	
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{indentfirst}
 \usepackage{wasysym}
+\DeclareUnicodeCharacter{04C3}{\khk}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
 
 \begin{document}
 \input{title.tex}
-
-
-\paragraph*{\bfseries {Цель работы:}}
-Экспериментальное определение времени охлаждения
-жидкости в аппарате с мешалкой и змеевиком до заданной конечной 
-температуры при нестационарном теплообмене; расчёт среднего значения 
-коэффициента теплопередачи за период охлаждения; расчёт теоретического
-времени охлаждения жидкости при нестационарном теплообмене.
-
-\begin{center}
-\subsection*{Краткие теоретические сведения}
-\end{center}
-Теплообменный процесс, в котором температура среды в какой-либо точке изменяется во времени, называется нестационарным. К такому процессу относится, например, процесс охлаждения жидкости в аппарате периодического действия. Охлаждение жидкости может быть осуществлено передачей теплоты от неё к хладагенту, подаваемому либо в рубашку аппарата, либо во встроенный в аппарат змеевик.\\
-
-Любой процесс с нагрева и охлаждения можно разделить на 3 стадии. Первая охватывает начало процесса и характеризуется постепенным распространением температурных возмущений, захватывающих все новые и новые участки тела. Скорость изменения температуры в отдельных точках тела может различной и сильно зависит от начального распределения температур в теле и удаленности этих точек от источника нагрева или охлаждения. Поэтому первая стадия процесса называется неупорядочным режимом.\\
-
-С течением времени влияние начальных неравномерностей сглаживается, и относительная скорость изменения температуры во всех точках тела становится постоянной. Наступает вторая стадия – режим упорядоченного процесса, который называют регулярным.\\
-
-Затем после долгого, относительно начальной стадии, промежутка устанавливается третий режим – стационарный режим с постоянным распределением температуры в теле, не зависящим от времени.\\
-
-Время охлаждения идеально перемешиваемой жидкости в аппарате периодического действия (при условии постоянства коэффициента теплопередачи и постоянства расхода хладагента с неизменной во времени начальной температурой) может быть рассчитано теоретически по формуле:\\
-
-\begin{equation}
-    t = \frac{m_1}{m_2} \cdot \frac{N}{N - 1} \cdot \ln\left( {\frac{T_{1,0} - T_{2in}}{T_{1,k} - T_{2in}}}\right)
-\end{equation}
-
-$N$ рассчитывается по формуле:
-
-$$N = \exp\left(\frac{K_{Т} \cdot A}{m_2 \cdot C_{p2}}\right) = constж;$$\\ 
-Где $m_1$ масса охлаждаемой жидкости;$m_2$ массовый расход хладагента; $C_{р1}$ и $C_{р2}$ – удельные теплоёмкости 
-охлаждаемой жидкости и хладагента соответственно; $T_{1,0}$ и $T_{1,k}$ – температуры охла-
-ждаемой жидкости начальная и конечная соответственно; $T_{2,in}$ – начальная
-температура хладагента; $K_T$ – коэффициент теплопередачи; $A$ – площадь
-поверхности теплопередачи.
-
 
 \newpage
 \begin{center}
@@ -57,17 +24,17 @@ $$N = \exp\left(\frac{K_{Т} \cdot A}{m_2 \cdot C_{p2}}\right) = constж;$$\\
 Схема установки изображена на рис. 1.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.7\textwidth]{img/schema.png}~
+    \includegraphics[width=0.6\textwidth]{img/schema.png}~
     \caption{Схема установки}
 \end{figure}
 
-Основным элементом установки является стеклянный реакционныйсосуд С грушевидной формы.\\
+Основным элементом установки является стеклянный реакционный сосуд С грушевидной формы.\\
 
 Благодаря специально организованному стоку воды через гидравлический затвор, объём жидкости в заполненном аппарате постоянен и равен $V_C = 24,57$ дм$^3$.
 Средний диаметр заполненной части сосуда составляет $D_c = 0,292$ м.\\
 
 
-Сосуд снабжён змеевиком З, изготовленным из стеклянной трубки размером {\diameter} 18,2 1,8 мм; диаметр витка змеевика $Dвит = 172,5$ мм. 
+Сосуд снабжён змеевиком З, изготовленным из стеклянной трубки размером {\diameter} 18,2 $\times$ 1,8 мм; диаметр витка змеевика $D_{\textrm{вит}} = 172,5$ мм. 
 Площадь поверхности погруженной части змеевика, определённая по 
 наружному размеру трубки $A = 0,405$ м$^2$. 
 Боросиликатное стекло, из которого выполнен змеевик, имеет теплопроводность  ${\lambda}_{CT}$ = 1,14 Вт/(м K).\\
@@ -85,16 +52,14 @@ $$N = \exp\left(\frac{K_{Т} \cdot A}{m_2 \cdot C_{p2}}\right) = constж;$$\\
 \begin{center}
 \subsection*{Обработка экспериментальных данных}
 \end{center}
-Экспериментальные данные (Таблица 1) используются для расчёта среднего значения коэффициента теплопередачи за период охлаждения и для расчёта
-теоретического времени охлаждения жидкости при нестационарном теплообмене.\\
 
-
+Экспериментальные данные используются для расчёта среднего значения коэффициента теплопередачи за период охлаждения и для расчёта
+теоретического времени охлаждения жидкости при нестационарном теплообмене.
 \begin{table}[!h]
-\caption{Экспериментальные данных.}
+\caption{Экспериментальные данные.}
 \begin{center}
 \begin{tabular}{|| c | c | c | c | c | c || c | c | c | c | c | c||} 
- \hline
- $i$ & $t_i$ & $T_{1,i}$ & $T_{2 in, i,}$ & $T_{2 out, i,}$ & 6,0 & $i$ & $t_i$ & $T_{1,i}$ & $T_{2 in, i,}$ & $T_{2 out, i,}$ & 6,0\\ [0.5ex] 
+\hline $i$ & t, \textrm{мин} & 5, \textcelsius & 8, \textcelsius & $6^{*}$, \textcelsius & 6, \textcelsius & $i$ & t, \textrm{мин} & 5, \textcelsius & 8, \textcelsius & $6^{*}$, \textcelsius & 6, \textcelsius\\ [0.5ex] 
  \hline\hline
  0 & 0 & 13,5 & 25,2 & 50,8 & 44,9 & 20 & 10 & 6,3 & 28,1 & 50,9 & 43,5\\ 
  \hline
@@ -146,28 +111,152 @@ $$N = \exp\left(\frac{K_{Т} \cdot A}{m_2 \cdot C_{p2}}\right) = constж;$$\\
 \begin{center}
 \begin{tabular}{| c | c | c | c |}
  \hline
-$T_{1,i}$ & $T_{2 in, i,}$ & $T_{2 out, i,}$ & 6,0 \\
+5, \textcelsius & 8, \textcelsius & $6^{*}$, \textcelsius & 6, \textcelsius \\
  \hline
 6,7 & 27,1 & 51,0 & 41,7 \\
   \hline
 \end{tabular}
 \end{center}
+
 \end{table}
+%
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/graph.jpg}~
+    \caption{Профиль температур теплоносителей}
+\end{figure}
+\newpage
+\begin{center}
+\subsubsection*{Расчёты}
+\end{center}
+Большее и меньшее значение движущей силы:\\
+$$\Delta t_{\textrm{м}} = t_{\textrm{1н}} - t_{\textrm{2к}} = 51,0 - 26,1 = 14,5 \; \textrm{К}$$
+$$\Delta t_{\textrm{б}} = t_{\textrm{1к}} - t_{\textrm{2н}} = 40,6 - 6,3 = 34,3\;  \textrm{K
+}$$
 
 \begin{flushleft}
-Выполнить следующие расчеты.
+Среднее логарифмическое значение движущей силы: \\
+\end{flushleft}
+$$\Delta t_{\textrm{ср}} = \frac{{\Delta t_{\textrm{б}}} - {\Delta t_{\textrm{м}}}}{\ln\left({\dfrac{\Delta t_{\textrm{б}}}{ \Delta t_{\textrm{м}}}}\right)} = \frac{34,3 - 14,5}{\ln\left(\dfrac{34,3}{14,5}\right)} = 23,0 \; \textrm{К}$$
+
+\begin{flushleft}
+Среднее значение температуры:
+\end{flushleft}
+$$t_{\textrm{ср1}} = \frac{t_{\textrm{1н}} + t_{\textrm{1к}}}{2} = \frac{51,6 + 40,8}{2} = 45,8 \; ^\circ \textrm{С}$$
+$$t_{\textrm{ср2}} = \frac{t_{\textrm{2к}} + t_{\textrm{2н}}}{2} = \frac{26,1 + 6,3}{2} =  16,2\; ^\circ \textrm{С}$$
+
+\begin{flushleft}
+Теплоёмкость теплоагента и хладоагента при средней арифметической температуре:
+\end{flushleft}
+$$c_{1} = 4179,6 \; \frac{\textrm{Дж}}{\textrm{Кг}  \cdot \textrm{К}} \quad c_{2} = 4184,5 \; \frac{\textrm{Дж}}{\textrm{Кг}  \cdot \textrm{К}}$$
+
+\begin{flushleft}
+Объёмные расходы теплоносителей:
+ \end{flushleft}
+\begin{center}
+Расход хол. 3,5 л/мин и тепл. 4 л/мин 
+\end{center}
+$$\dot{v}_{1} = \frac{4 }{1000 \cdot 60} = 6,667 \cdot 10^{-5} \; \frac{\textrm{м}^3}{\textrm{с}} \quad \dot{v}_{2} = \frac{3,5 }{1000 \cdot 60} = 5,85 \cdot 10^{-5} \; \frac{\textrm{м}^3}{\textrm{с}}$$ 
+
+\begin{flushleft}
+Массовые расходы теплоносителей:
+\end{flushleft}
+$$\dot{m}_{1} = \dot{v}_{1} \cdot \rho_{\textrm{1н}} =  6,667 \cdot 10^{-5} \cdot 987,6 = 6,584 \cdot 10^{-2} \; \frac{\textrm{Кг}}{\textrm{с}}$$
+$$\dot{m}_{2} = \dot{v}_{2} \cdot \rho_{\textrm{2н}} =  5,85 \cdot 10^{-5} \cdot 999,9 = 5,849 \cdot 10^{-2} \; \frac{\textrm{Кг}}{\textrm{с}}$$
+
+\begin{flushleft}
+Количество теплоты, отдаваемой в единицу времени горячим теплоносителем:
+\end{flushleft}
+$$Q_{1} = \dot{m}_{1} \cdot c_{1} \cdot \left(t_{\textrm{1н}} - t_{\textrm{1к}} \right) = 6,584 \cdot 10^{-2} \cdot 4179,6 \cdot \left(51,0 - 40,6 \right) = 2862 \; \textrm{Вт}$$
+
+\begin{flushleft}
+Количество теплоты, воспринимаемой в единицу времени холодным теплоносителем:
+\end{flushleft}
+$$Q_{2} = \dot{m}_{2} \cdot c_{2} \cdot \left(t_{\textrm{2к}} - t_{\textrm{2н}} \right) = 5,849 \cdot 10^{-2} \cdot 4184,5 \cdot \left(26,1 - 6,3 \right) = 4846 \; \textrm{Вт}$$
+
+\begin{flushleft}
+Экспериментальные значения коэффициента теплопередачи:
+\end{flushleft}
+$$K_{\textrm{эксп1}} = \frac{Q_{1}}{A \cdot \Delta t_{\textrm{ср}}} = \frac{2862}{0,405 \cdot 23,0} = 307 \; \frac{\textrm{Вт}}{\textrm{м}^2 \cdot \textrm{К}}$$
+$$K_{\textrm{эксп2}} = \frac{Q_{2}}{A \cdot \Delta t_{\textrm{ср}}} = \frac{4846}{0,405 \cdot 23,0} = 520 \; \frac{\textrm{Вт}}{\textrm{м}^2 \cdot \textrm{К}}$$
+
+Где $A$ -- площадь поверхности погружённой части змеевика, $A = 0,405$ м$^2$.
+
+
+\begin{flushleft}
+В данной лабораторной работе:
+\end{flushleft}
+$$t_{\textrm{ср1}} = t_{\textrm{1к}} = 40,6 \; ^\circ \textrm{С}$$
+$$t_{\textrm{ср2}} = t_{\textrm{ср1}} - \Delta t_{\textrm{ср}} = 45,8 - 23,0 = 17,603 \; ^\circ \textrm{С}$$
+
+\begin{flushleft}
+Физические свойства теплагента и хлдагента при его средней интегральной
+температуре $t_{\textrm{ср1}}$ : \\
+
+плотность : $\rho_{1} = 992,0 \; \textrm{Кг}/{\textrm{м}^{3}}, \quad \rho_{2} = 998,0 \; \textrm{Кг}/{\textrm{м}^{3}}$\\
+вязкость : $\mu_{1} = 0,6459 \cdot 10^{-3} \; \textrm{Па} \cdot \textrm{с}, \quad \mu_{2} = 1,065 \cdot 10^{-3} \; \textrm{Па} \cdot \textrm{с}$\\
+теплоёмкость : $\textrm{с}_1 = 4178,7 \; \textrm{Дж} / \left(\textrm{Кг} \cdot \textrm{К}\right), \quad \textrm{с}_2 = 4183,3 \; \left(\textrm{Дж} / \textrm{Кг} \cdot \textrm{К}\right)$\\
+теплопроводность : $ \lambda_1 = 0,621 \; \textrm{Вт} / \left(\textrm{м}^2 \cdot \textrm{К}\right), \quad \lambda_2 = 0,5947 \; \left(\textrm{Вт} / \textrm{м}^2 \cdot \textrm{К}\right)$
+\end{flushleft}
+
+\begin{flushleft}
+Критерий (число) Прандтля для теплоагента и хладагента: 
+\end{flushleft}
+$$ Pr_1 = \frac{\textrm{с}_1 \cdot \mu_1}{\lambda_1} = \frac{4178,7 \cdot 0,6459 \cdot 10^{-3}}{0,621} = 4,346$$
+$$ Pr_2 = \frac{\textrm{с}_2 \cdot \mu_2}{\lambda_2} = \frac{4183,3 \cdot 1,065 \cdot 10^{-3}}{0,5947} = 7,482$$
+
+\begin{flushleft}
+Критерий (число) Рейнольдса теплоагента:
+\end{flushleft}
+$$Re_1 = \frac{v_1 \cdot {d_{\textrm{м}}^2 \cdot \rho_1}}{\mu_1} = \frac{2 \cdot 0,136^2 \cdot 992,0}{0,6459 \cdot 10^{-3}} = 5,681 \cdot 10^4$$
+Где $d_{\textrm{м}}$ диаметр лопастной мешалки  $d_{\textrm{м}} = 0,136$ м, $v_1$ скорость течения теплагента $v_1 = 2 \; \dfrac{\textrm{м}}{\textrm{с}}$.
+
+\begin{flushleft}
+Критерий (число) Рейнольдса хладоагента:
+\end{flushleft}
+$$Re_2 = \frac{v_2 \cdot {d_{\textrm{вн}}^2 \cdot \rho_2}}{\mu_2} = \frac{0,35 \cdot 0,0146^2 \cdot 998,0}{1,065 \cdot 10^{-3}} = 4,79 \cdot 10^3$$
+Где $d_{\textrm{вн}}$ внутреный диаметр змеевика $d_{\textrm{вн}} = 0,0146$ м/с, $v_2$ скорость течения теплагента в трубе с внутреным диаметром $d_{\textrm{вн}}\;$, $v_2 = \dot{m_2}/\left(\rho_2 \cdot S_2\right) = 0,35\; \dfrac{\textrm{м}}{\textrm{с}}$.
+
+\begin{flushleft}
+Критерий (число) Нуссельта для теплоагента:
+\end{flushleft}
+$$Nu_1 = 0,87 \cdot {Re_1}^{0,62} \cdot {Pr_1}^{0,33} \cdot \Gamma = 0,87 \cdot 56810^{0,62} \cdot 4,346^{0,33} \cdot 0,466 = 583$$
+Г расчитать по формуле $\Gamma = d_{\textrm{м}} / D_c = 0,466$ 
+\newpage
+
+\begin{flushleft}
+Критерий (число) Нуссельта для хладоагента:
 \end{flushleft}
 
 \begin{center}
-\subsection*{Анализ результатов работы}
+Как $13,5 \left(\dfrac{d_{\textrm{вн}}}{D_{\textrm{вит}}}\right)^{-0,5} < Re_2 < 18500 \left(\dfrac{d_{\textrm{вн}}}{D_{\textrm{вит}}}\right)^{0,28}$
 \end{center}
- 
+$$Nu_2 = 0,0575 \cdot {Re_2}^{0,75} \cdot {Pr_2}^{0,45} \left(\dfrac{d_{\textrm{вн}}}{d_{\textrm{вит}}}\right)^{0,28}$$
+$$Nu_2= 0,0572 \cdot 4790^{0,75} \cdot 7,482^{0,43} \left(\frac{0,0146}{0,1725}\right)^{0,28} = 46,856$$
 
-\newpage
+\begin{flushleft}
+Коэффициент теплоотдачи от теплоагента к стенке:
+\end{flushleft}
+$$\alpha_1 = \dfrac{Nu_1 \cdot \lambda_1}{d_{\textrm{м}}} = \dfrac{583 \cdot 0,621}{0,136} = 2,664 \cdot 10^3 \; \dfrac{\textrm{Вт}}{\textrm{м}^2 \cdot \textrm{К}}$$
+
+\begin{flushleft}
+Коэффициент теплоотдачи от стенки к хладоагенту:
+\end{flushleft}
+$$\alpha_2 = \dfrac{Nu_2 \cdot \lambda_2}{d_{\textrm{вн}}} = \dfrac{46,856 \cdot 0,5947}{0,0146} = 1,909 \cdot 10^3 \; \dfrac{\textrm{Вт}}{\textrm{м}^2 \cdot \textrm{К}}$$
+
+\begin{flushleft}
+Коэффициент теплопередачи, отнесённый к единице
+площади наружной поверхности теплообменной трубы:
+\end{flushleft}
+$$\textrm{К}_{\textrm{Т}} = \left[ \dfrac{1}{\alpha_{1}} + \dfrac{d_{\textrm{н}}}{2\; \lambda_{\textrm{ст}}} \cdot \ln \left( \dfrac{d_{\textrm{н}}}{d_{\textrm{вн}}} \right) + \dfrac{1}{\alpha_{2}} \cdot \dfrac{d_{\textrm{н}}}{d_{\textrm{вн}}} \right]^{-1}$$
+$$\textrm{К}_{\textrm{Т}} = \left[\dfrac{1}{2664} + \dfrac{0,0182}{2 \cdot 1,14} \cdot \ln \left(\dfrac{0,018}{0,0146} \right) + \dfrac{1}{1909} \cdot \dfrac{0,0182}{0,0146} \right]^{-1} = 370 \; \dfrac{\textrm{Вт}}{\textrm{м}^2 \cdot \textrm{К}}$$\\
+
+
 \begin{center}
 \subsection*{Заключение}
 \end{center}
 
+В ходе лабораторной работы мы провели стационарный теплообмен и рассчитали коэффициент теплопередачи, который составил 370,44 $\textrm{Вт}/\left(\textrm{м}^2 \cdot \textrm{К}\right)$.
 
 
 
